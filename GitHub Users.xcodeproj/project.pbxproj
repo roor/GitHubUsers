@@ -21,6 +21,8 @@
 		60C6B48618DC909300AA83B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C6B46818DC908F00AA83B9 /* UIKit.framework */; };
 		60C6B48E18DC909300AA83B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60C6B48C18DC909300AA83B9 /* InfoPlist.strings */; };
 		60C6B49018DC909300AA83B9 /* GitHub_UsersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C6B48F18DC909300AA83B9 /* GitHub_UsersTests.m */; };
+		60C6B49C18DC92F100AA83B9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C6B49B18DC92F100AA83B9 /* User.m */; };
+		60C6B4A218DC970F00AA83B9 /* GHUsersFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C6B4A118DC970F00AA83B9 /* GHUsersFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		60C6B48B18DC909300AA83B9 /* GitHub UsersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GitHub UsersTests-Info.plist"; sourceTree = "<group>"; };
 		60C6B48D18DC909300AA83B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60C6B48F18DC909300AA83B9 /* GitHub_UsersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHub_UsersTests.m; sourceTree = "<group>"; };
+		60C6B49A18DC92F100AA83B9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		60C6B49B18DC92F100AA83B9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		60C6B4A018DC970F00AA83B9 /* GHUsersFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUsersFetcher.h; sourceTree = "<group>"; };
+		60C6B4A118DC970F00AA83B9 /* GHUsersFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUsersFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 		60C6B46A18DC908F00AA83B9 /* GitHub Users */ = {
 			isa = PBXGroup;
 			children = (
+				60C6B4A018DC970F00AA83B9 /* GHUsersFetcher.h */,
+				60C6B4A118DC970F00AA83B9 /* GHUsersFetcher.m */,
+				60C6B49918DC929800AA83B9 /* Models */,
 				60C6B47318DC908F00AA83B9 /* AppDelegate.h */,
 				60C6B47418DC909000AA83B9 /* AppDelegate.m */,
 				60C6B47618DC909000AA83B9 /* Main.storyboard */,
@@ -150,6 +159,15 @@
 				60C6B48C18DC909300AA83B9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60C6B49918DC929800AA83B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60C6B49A18DC92F100AA83B9 /* User.h */,
+				60C6B49B18DC92F100AA83B9 /* User.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C6B49C18DC92F100AA83B9 /* User.m in Sources */,
 				60C6B47B18DC909000AA83B9 /* ViewController.m in Sources */,
 				60C6B47518DC909000AA83B9 /* AppDelegate.m in Sources */,
 				60C6B47118DC908F00AA83B9 /* main.m in Sources */,
+				60C6B4A218DC970F00AA83B9 /* GHUsersFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
