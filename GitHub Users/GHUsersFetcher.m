@@ -73,7 +73,7 @@ NSString *kFetcherDoneNotification = @"kFetcherDoneNotification";
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[NSNotificationCenter defaultCenter] postNotificationName:kFetcherDoneNotification object:self.data];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kFetcherDoneNotification object:[self class] userInfo:@{@"data": self.data}];
         });
     });
 }

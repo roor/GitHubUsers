@@ -41,7 +41,7 @@
 
 - (void)dataCatcher:(NSNotification *)notification
 {
-    self.dataSource = (NSArray *)[notification object];
+    self.dataSource = (NSArray *)notification.userInfo[@"data"];
     
     [self.tableView reloadData];
 }
